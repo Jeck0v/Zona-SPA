@@ -1,0 +1,254 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  color: #60574b;
+}
+
+h1, h2, h3 {
+  font-family: 'Qwigley', serif;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+a:link, a:visited {
+  color: #8d6f47;
+}
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  background-color: #161616;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+header nav a:link,
+header nav a:visited {
+  font-family: 'Qwigley', cursive;
+  color: #E0C184;
+  font-weight: normal;
+  font-size: 2.5rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav a:hover {
+  color: white;
+  text-shadow: 0 0 10px white;
+}
+header nav a.active {
+  color: white;
+}
+
+header nav a i {
+  font-size: 1.8rem;
+}
+
+header img {
+  max-width: 120px;
+}
+
+/* Bonus (teasing) - Media Queries CSS */
+@media (width <= 530px) {
+  header,
+  header nav {
+    flex-direction: column;
+  }
+}
+
+#banner {
+  background-image: url('../img/fond.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#banner .inner {
+  background-color: rgba(224, 194, 133, 0.2);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#banner h1,
+#banner p {
+  margin: 0;
+  font-family: 'Qwigley', cursive;
+}
+
+#banner h1 {
+  font-weight: normal;
+  font-size: 5rem;
+}
+
+#banner p {
+  font-size: 3rem;
+}
+
+#offer {
+  background-color: #c2afe4;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: white;
+}
+#offer p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+main {
+  line-height: 2;
+  margin: 2.5rem 0;
+}
+
+#about {
+  background-color: #8B7963;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+#about .flex {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+}
+
+#about img {
+  max-width: 200px;
+  aspect-ratio: 1 / 1;
+  border-radius: 100px;
+}
+
+#about h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: #161616;
+  padding: 65px 0;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-weight: bold;
+}
+
+table td {
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #CCCCCC;
+  font-size: 0.8rem;
+}
+
+table td:first-child {
+  text-align: left;
+}
+
+table tr:nth-child(odd) {
+  background-color: #F2F2F2;
+}
+
+table caption {
+  background-color: #E4C6AF;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 0.1rem 0.5rem;
+  color: #6f503c;
+  font-weight: normal;
+}
+
+
+form {
+  text-align: center;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form .fields {
+  display: flex;
+  gap: 2.5rem;
+  margin: 2rem 0;
+}
+
+form .fields > * {
+  flex: 1;
+}
+
+form .fields-centered {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+form input,
+form select {
+  border: none;
+  border-bottom: 1px solid #766E63;
+  padding: 0.5rem 1rem;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-bottom-width: 3px;
+}
+
+form label {
+  cursor: pointer;
+}
+
+form input:checked + label {
+  border-bottom: 1px solid #766E63;
+}
+
+form button[type="submit"] {
+  background-color: #7F6C53;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+}
