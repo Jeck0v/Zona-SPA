@@ -10,7 +10,7 @@ Il permet aussi d'afficher les rendez vous. Et de contacter l'entreprise.
   <hr>
 
 ## 🙇 Auteur
-#### Arnaud Fischer & Maxime Bidan
+#### Arnaud Fischer
 - Github Arnaud: [@Jeck0v](https://github.com/Jeck0v)
 
 ## ❤️ Support  
